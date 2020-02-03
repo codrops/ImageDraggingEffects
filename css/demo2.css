@@ -1,0 +1,22 @@
+.img-drag {
+	position: relative;
+	overflow: hidden;
+	width: 290px;
+	height: 400px;
+	max-width: 100%;
+	cursor: grab;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-drag__inner {
+	flex: none;
+	--overflow: 100px;
+	position: relative;
+	background-size: cover;
+	background-position: 50% 50%;
+	width: calc(100% + var(--overflow));
+	height: calc(100% + var(--overflow));
+	will-change: transform;
+}

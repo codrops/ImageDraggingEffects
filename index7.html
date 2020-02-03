@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Image Dragging Effects | Demo 7 | Codrops</title>
+		<meta name="description" content="A set of playful dragging effects for images using various techniques." />
+		<meta name="keywords" content="css, filter, draggable, dragging, effect, animation, ui, web design, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/mto6dlj.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo7.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	</head>
+	<body class="demo-7 loading">
+		<main><div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">Image Dragging Effects</h1>
+					<div class="frame__links">
+						<a href="https://tympanus.net/codrops/?p=47024">Article</a>
+						<a href="https://tympanus.net/Tutorials/ProceduralClouds/">Previous Demo</a>
+						<a href="https://github.com/codrops/ImageDraggingEffects/">GitHub</a>
+					</div>
+				</div>
+				<h3 class="frame__initials">KH</h3>
+				<p class="frame__info">Drag the images (fast)</p>
+				<div class="frame__demos">
+					<a href="index.html" class="frame__demo">1</a>
+					<a href="index2.html" class="frame__demo">2</a>
+					<a href="index3.html" class="frame__demo">3</a>
+					<a href="index4.html" class="frame__demo">4</a>
+					<a href="index5.html" class="frame__demo">5</a>
+					<a href="index6.html" class="frame__demo">6</a>
+					<a href="index7.html" class="frame__demo frame__demo--current">7</a>
+					<a href="index8.html" class="frame__demo">8</a>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content__drag-area">
+					<div class="img-drag">
+						<svg width="250" height="330" viewBox="0 0 250 340" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<defs>
+								<filter id="distortionFilter">
+									<feTurbulence type="fractalNoise" baseFrequency="0.01 0.002" numOctaves="4" seed="5" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+									<feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
+								</filter>
+							</defs>
+							<g filter="url(#distortionFilter)">
+								<image x="0" y="10" href="./10.jpg" width="250" height="320"/>
+							</g>
+						</svg>
+					</div>
+					<div class="img-drag">
+						<svg width="250" height="330" viewBox="0 0 250 340" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<defs>
+								<filter id="distortionFilter2">
+									<feTurbulence type="fractalNoise" baseFrequency="0.1 0.005" numOctaves="5" seed="4" stitchTiles="noStitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+									<feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
+								</filter>
+							</defs>
+							<g filter="url(#distortionFilter2)">
+								<image x="0" y="10" href="./11.jpg" width="250" height="320"/>
+							</g>
+						</svg>
+					</div>
+				</div>
+				<h2 class="content__title content__title--up">Genevieve</h2>
+			</div>
+		</main>
+		<script src="js/demo7/index.js"></script>
+	</body>
+</html>

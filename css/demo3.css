@@ -1,0 +1,18 @@
+.img-drag {
+	position: relative;
+	background-size: cover;
+	width: 220px;
+	height: 300px;
+	max-width: 100%;
+	cursor: grab;	
+	margin: 4rem;
+	will-change: transform;
+}
+
+.img-drag:nth-child(1) {
+	margin-top: 30vh;
+}
+
+.img-drag:nth-child(2) {
+	margin-top: 0;
+}

@@ -1,0 +1,32 @@
+.img-drag {
+	position: relative;
+	overflow: hidden;
+	width: 260px;
+	height: 330px;
+	max-width: 100%;
+	cursor: grab;
+	margin: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-drag:nth-child(1) {
+	margin-top: 20vh;
+}
+
+.img-drag:nth-child(2) {
+	margin-top: 0;
+	width: 210px;
+	height: 290px;
+}
+
+.img-drag__inner {
+	flex: none;
+	--overflow: 70px;
+	position: relative;
+	background-size: cover;
+	background-position: 50% 50%;
+	width: calc(100% + var(--overflow));
+	height: calc(100% + var(--overflow));
+}

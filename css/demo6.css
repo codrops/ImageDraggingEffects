@@ -1,0 +1,48 @@
+.img-wrap {
+	--img-width: 200px;
+	--img-height: 270px;
+	width: var(--img-width);
+	height: var(--img-height);
+	position: relative;
+	pointer-events: none;
+	margin: 4rem;
+}
+
+.img-wrap:nth-child(1) {
+	margin-top: 30vh;
+}
+
+.img-wrap:nth-child(2) {
+	margin-top: 0;
+}
+
+.img-drag {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 1;
+	pointer-events: auto;
+	cursor: grab;
+}
+
+.img-drag__inner {
+	background-size: cover;
+	background-position: 50% 50%;
+	width: 100%;
+	height: 100%;
+}
+
+.img-trail {
+	width: var(--img-width);
+	height: var(--img-height);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	mix-blend-mode: color-dodge;
+}
+
+.content__title {
+	mix-blend-mode: difference;
+}

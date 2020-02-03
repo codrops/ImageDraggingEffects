@@ -1,0 +1,30 @@
+.img-wrap {
+	position: relative;
+	pointer-events: none;
+	width: 350px;
+	height: 450px;
+	max-width: 100%;
+}
+
+.img-drag,
+.img-trail {
+	cursor: grab;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	pointer-events: auto;
+}
+
+.img-trail {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+}
+
+.content__title {
+	font-size: 8vw;
+	mix-blend-mode: exclusion;
+}

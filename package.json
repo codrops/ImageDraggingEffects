@@ -1,0 +1,27 @@
+{
+  "name": "ImageDraggingEffects",
+  "version": "1.0.0",
+  "description": "A set of playful dragging effects for images using various techniques.",
+  "main": "index.js",
+  "scripts": {
+    "copyimages": "copyfiles --f img/10.jpg img/11.jpg dist",
+    "start": "npm run copyimages && parcel *.html --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build index.html --no-minify --no-source-maps --public-url ./ && npm run copyimages",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "keywords": [],
+  "author": "Codrops",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "copyfiles": "^2.2.0",
+    "draggabilly": "^2.2.0",
+    "gsap": "^3.0.5",
+    "imagesloaded": "^4.1.4",
+    "parcel-bundler": "^1.12.4"
+  }
+}
