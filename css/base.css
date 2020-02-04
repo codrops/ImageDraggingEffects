@@ -225,6 +225,18 @@ a:focus {
 	justify-content: center;
 }
 
+.img-drag,
+.img-wrap {
+	flex: none;
+}
+
+@media screen and (max-width: 42em) {
+	.content .img-drag,
+	.content .img-wrap {
+		margin: 1rem;
+	}
+}
+
 @media screen and (min-width: 53em) {
 	.frame {
 		position: fixed;
